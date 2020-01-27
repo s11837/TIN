@@ -14,7 +14,7 @@ namespace DatingApp.API.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
-        private readonly DataContext _context;  //_ to osobista preferencja prywatnego pola
+        private readonly DataContext _context;  
         public ValuesController(DataContext context)
         {
             _context = context;
