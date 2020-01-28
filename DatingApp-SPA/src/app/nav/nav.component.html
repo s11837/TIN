@@ -1,16 +1,16 @@
 <nav class="navbar navbar-expand-md navbar-dark  bg-primary">
   <div class="container">
-    <a class="navbar-brand" href="#">Wędkarstwo</a>
+    <a class="navbar-brand" [routerLink]="['/home']">Wędkarstwo</a>
 
     <ul *ngIf="loggedIn()" class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Wędki</a>
+        <li class="nav-item"  routerLinkActive="active">
+          <a class="nav-link" [routerLink]="['/katalog']">Wędki</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Lista</a>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" [routerLink]="['/kolowrotki']">Kołowrotki</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Kontakt</a>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" [routerLink]="['/messages']">Kontakt</a>
         </li>
     </ul>
   
