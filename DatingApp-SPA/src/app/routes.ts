@@ -1,6 +1,6 @@
 import {Routes} from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { KatalogComponent } from './katalog/katalog.component';
+import { KatalogComponent } from './members/katalog/katalog.component';
 import { MessagesComponent } from './messages/messages.component';
 import { KolowrotkiComponent } from './kolowrotki/kolowrotki.component';
 import { AuthGuard } from './_guards/auth.guard';

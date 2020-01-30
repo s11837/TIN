@@ -14,8 +14,10 @@ import { RegisterComponent } from './register/register.component';
 import { ErrorInterceptor, ErrorInterceptorProvider } from './_services/error.interceptor';
 import { KolowrotkiComponent } from './kolowrotki/kolowrotki.component';
 import { MessagesComponent } from './messages/messages.component';
-import { KatalogComponent } from './katalog/katalog.component';
+import { KatalogComponent } from './members/katalog/katalog.component';
 import { appRoutes } from './routes';
+import { UserService } from './_services/user.service';
+import { MemberListComponent } from './members/katalog/member-list/member-list.component';
 
 
 @NgModule({
@@ -26,7 +28,8 @@ import { appRoutes } from './routes';
       RegisterComponent,
       KolowrotkiComponent,
       MessagesComponent,
-      KatalogComponent
+      KatalogComponent,
+      MemberListComponent
    ],
    imports: [
       BrowserModule,
