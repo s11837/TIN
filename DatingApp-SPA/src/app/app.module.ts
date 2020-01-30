@@ -19,7 +19,6 @@ import { MessagesComponent } from './messages/messages.component';
 import { KatalogComponent } from './members/katalog/katalog.component';
 import { appRoutes } from './routes';
 import { UserService } from './_services/user.service';
-import { MemberListComponent } from './members/member-list/member-list.component';
 import { MemberDetailComponent } from './members/member-detail/member-detail.component';
 
 export function tokenGetter() {
@@ -36,7 +35,6 @@ export function tokenGetter() {
       KolowrotkiComponent,
       MessagesComponent,
       KatalogComponent,
-      MemberListComponent,
       MemberDetailComponent
    ],
    imports: [
