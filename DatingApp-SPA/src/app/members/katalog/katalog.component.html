@@ -10,8 +10,7 @@
         <th>Miasto</th>
       </tr>
         <tr *ngFor="let user of users">
-          <td>{{user.username}}</td>
-          <td>{{user.plec}}</td>
+          <td><a [routerLink]="['/katalog', user.id]" href="">{{user.username}}</a></td>          <td>{{user.plec}}</td>
           <td>{{user.age}}</td>
           <td>{{user.pseudonim}}</td>
           <td>{{user.lastActive}}</td>
