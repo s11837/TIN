@@ -4,6 +4,7 @@ import { KatalogComponent } from './members/katalog/katalog.component';
 import { MessagesComponent } from './messages/messages.component';
 import { KolowrotkiComponent } from './kolowrotki/kolowrotki.component';
 import { AuthGuard } from './_guards/auth.guard';
+import { MemberDetailComponent } from './members/member-detail/member-detail.component';
 
 export const appRoutes: Routes = [
     { path: '', component: HomeComponent},
@@ -13,6 +14,7 @@ export const appRoutes: Routes = [
         canActivate: [AuthGuard],
         children: [
             { path: 'katalog', component: KatalogComponent},
+            { path: 'katalog/:id', component: MemberDetailComponent},
             { path: 'messages', component: MessagesComponent},
             { path: 'kolowrotki', component: KolowrotkiComponent},
         ]

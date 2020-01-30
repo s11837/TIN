@@ -1,5 +1,5 @@
 <tr>
-  <td>{{user.username}}</td>
+  <td><a [routerLink]="['/katalog', user.id]" href="">{{user.username}}</a></td>
   <td>{{user.plec}}</td>
   <td>{{user.age}}</td>
   <td>{{user.pseudonim}}</td>
