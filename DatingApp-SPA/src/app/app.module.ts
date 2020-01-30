@@ -17,7 +17,7 @@ import { MessagesComponent } from './messages/messages.component';
 import { KatalogComponent } from './members/katalog/katalog.component';
 import { appRoutes } from './routes';
 import { UserService } from './_services/user.service';
-import { MemberListComponent } from './members/katalog/member-list/member-list.component';
+import { MemberListComponent } from './members/member-list/member-list.component';
 
 
 @NgModule({

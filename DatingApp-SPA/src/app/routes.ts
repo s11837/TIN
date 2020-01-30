@@ -17,6 +17,6 @@ export const appRoutes: Routes = [
             { path: 'kolowrotki', component: KolowrotkiComponent},
         ]
     },
-    { path: '**', redirectTo: 'home', pathMatch: 'full'},
+    { path: '**', redirectTo: '', pathMatch: 'full'},
 
 ];
