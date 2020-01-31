@@ -12,13 +12,13 @@ namespace DatingApp.API.Helpers
             response.Headers.Add("Access-Control-Allow-Origin", "*");
         }
 
-        public static int CalculateAge(this DateTime theDateTime)
+        public static int CalculateAge(this DateTime Dataurodzenia)
         {
-            var Age = DateTime.Today.Year - theDateTime.Year;
-            if (theDateTime.AddYears(Age) > DateTime.Today)
-                Age--;
+            var age = DateTime.Today.Year - Dataurodzenia.Year;
+            if (Dataurodzenia.AddYears(age) > DateTime.Today)
+                age--;
 
-                return Age;
+                return age;
         }
     }
 }

@@ -5,10 +5,10 @@
   <div class="form-group">
     <label class="control-label" style="margin-right:10px">Jestem: </label>
     <label class="radio-inline">
-      <input class="mr-3" type="radio" value="Mężczyzna" formControlName="Plec">Mężczyzną
+      <input class="mr-3" type="radio" value="Mężczyzna" formControlName="plec">Mężczyzną
     </label>
     <label class="radio-inline ml-3">
-      <input class="mr-3" type="radio" value="Kobieta" formControlName="Plec">Kobietą
+      <input class="mr-3" type="radio" value="Kobieta" formControlName="plec">Kobietą
     </label>
   </div>
 
@@ -25,21 +25,21 @@
   </div>
 
   <div class="form-group">
-    <input [ngClass]="{'is-invalid': registerForm.get('Pseudonim').errors && registerForm.get('Pseudonim').touched}" class="form-control"
-      placeholder="Pseudonim" formControlName="Pseudonim">
-    <div class="invalid-feedback" *ngIf="registerForm.get('Pseudonim').touched && registerForm.get('Pseudonim').hasError('required')">Pseudonim jest wymagany</div>
+    <input [ngClass]="{'is-invalid': registerForm.get('pseudonim').errors && registerForm.get('pseudonim').touched}" class="form-control"
+      placeholder="Pseudonim" formControlName="pseudonim">
+    <div class="invalid-feedback" *ngIf="registerForm.get('pseudonim').touched && registerForm.get('pseudonim').hasError('required')">Pseudonim jest wymagany</div>
   </div>
 
   <div class="form-group">
-    <input [ngClass]="{'is-invalid': registerForm.get('DataUrodzenia').errors && registerForm.get('DataUrodzenia').touched}" class="form-control"
-      placeholder="Data Urodzenia" formControlName="DataUrodzenia" type="text" bsDatepicker >
-    <div class="invalid-feedback" *ngIf="registerForm.get('DataUrodzenia').touched && registerForm.get('DataUrodzenia').hasError('required')">Data urodzenia jest wymagana</div>
+    <input [ngClass]="{'is-invalid': registerForm.get('Dataurodzenia').errors && registerForm.get('Dataurodzenia').touched}" class="form-control"
+      placeholder="Data Urodzenia" formControlName="Dataurodzenia" type="text" bsDatepicker >
+    <div class="invalid-feedback" *ngIf="registerForm.get('Dataurodzenia').touched && registerForm.get('Dataurodzenia').hasError('required')">Data urodzenia jest wymagana</div>
   </div>
 
   <div class="form-group">
-    <input [ngClass]="{'is-invalid': registerForm.get('Miasto').errors && registerForm.get('Miasto').touched}" class="form-control"
-      placeholder="Miasto" formControlName="Miasto">
-    <div class="invalid-feedback" *ngIf="registerForm.get('Miasto').touched && registerForm.get('Miasto').hasError('required')">Miasto jest wymagane</div>
+    <input [ngClass]="{'is-invalid': registerForm.get('miasto').errors && registerForm.get('miasto').touched}" class="form-control"
+      placeholder="Miasto" formControlName="miasto">
+    <div class="invalid-feedback" *ngIf="registerForm.get('miasto').touched && registerForm.get('miasto').hasError('required')">Miasto jest wymagane</div>
   </div>
 
   <div class="form-group">

@@ -4,7 +4,7 @@
       <tr>
         <th>Username</th>
         <th>Plec</th>
-        <th>wiek</th>
+        <th>Wiek</th>
         <th>Pseudonim</th>
         <th>Last active</th>
         <th>Miasto</th>
@@ -13,7 +13,7 @@
           <td><a [routerLink]="['/katalog', user.id]" href="">{{user.username}}</a></td><td>{{user.plec}}</td>
           <td>{{user.age}}</td>
           <td>{{user.pseudonim}}</td>
-          <td>{{user.lastActive}}</td>
+          <td>{{user.lastActive | date: "dd.MM.yyyy"}}</td>
           <td>{{user.miasto}}</td>
         </tr>
     </table>
