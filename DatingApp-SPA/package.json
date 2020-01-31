@@ -22,6 +22,7 @@
     "@auth0/angular-jwt": "^3.0.1",
     "@types/alertify": "^0.3.30",
     "alertifyjs": "^1.13.1",
+    "angular-ng-autocomplete": "^1.1.16",
     "bootstrap": "^4.4.1",
     "bootswatch": "^4.1.1",
     "font-awesome": "^4.7.0",
