@@ -1,23 +1,31 @@
 <div class="container">
-  <div class="row">
-    <table class="table table-hover" style="width:100%">
-      <tr>
-        <th>Username</th>
-        <th>Plec</th>
-        <th>Wiek</th>
-        <th>Pseudonim</th>
-        <th>Last active</th>
-        <th>Miasto</th>
-      </tr>
-        <tr *ngFor="let user of users">
-          <td><a [routerLink]="['/katalog', user.id]" href="">{{user.username}}</a></td><td>{{user.plec}}</td>
-          <td>{{user.age}}</td>
-          <td>{{user.pseudonim}}</td>
-          <td>{{user.lastActive | date: "dd.MM.yyyy"}}</td>
-          <td>{{user.miasto}}</td>
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <input type="text" placeholder="Użytkownik" aria-label="Użytkownik" matInput [formControl]="myControl" [matAutocomplete]="auto">
+      <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+        <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+          {{option.username}}
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+  </form>
+    <div class="row">
+      <table class="table table-hover" style="width:100%">
+        <tr>
+          <th>Username</th>
+          <th>Plec</th>
+          <th>Wiek</th>
+          <th>Pseudonim</th>
+          <th>Last active</th>
+          <th>Miasto</th>
         </tr>
-
-        
-    </table>
-  </div>
+          <tr *ngFor="let user of users">
+            <td><a [routerLink]="['/katalog', user.id]" href="">{{user.username}}</a></td><td>{{user.plec}}</td>
+            <td>{{user.age}}</td>
+            <td>{{user.pseudonim}}</td>
+            <td>{{user.lastActive | date: "dd.MM.yyyy"}}</td>
+            <td>{{user.miasto}}</td>
+          </tr>
+      </table>
+    </div>
   </div>
