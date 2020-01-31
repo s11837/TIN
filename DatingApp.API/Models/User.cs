@@ -25,7 +25,7 @@ namespace DatingApp.API.Models
 
         public DateTime Created { get; set; }
 
-        public DateTime LastActive { get; set; }
+        public DateTime lastActive { get; set; }
 
         public string Opis { get; set; }
 

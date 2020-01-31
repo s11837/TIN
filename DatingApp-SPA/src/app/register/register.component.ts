@@ -15,7 +15,7 @@ export class RegisterComponent implements OnInit {
   user: User;
   registerForm: FormGroup;
 
-  constructor(private authService: AuthService,private router: Router,
+  constructor(private authService: AuthService, private router: Router,
   private alertify: AlertifyService, private fb: FormBuilder) { }
 
   ngOnInit() {
@@ -26,9 +26,9 @@ export class RegisterComponent implements OnInit {
     this.registerForm = this.fb.group({
       Plec: ['Mężczyzna'],
       username: ['', Validators.required],
-      Pseudonim: ['', Validators.required],
-      DataUrodzenia: [null, Validators.required],
-      Miasto: ['', Validators.required],
+      pseudonim: ['', Validators.required],
+      dataurodzenia: [null, Validators.required],
+      miasto: ['', Validators.required],
       password: ['', [Validators.required, Validators.minLength(4), Validators.maxLength(8)]],
       confirmPassword: ['', Validators.required]
     }, {validator: this.passwordMatchValidator});

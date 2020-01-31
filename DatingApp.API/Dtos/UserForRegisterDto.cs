@@ -19,7 +19,7 @@ namespace DatingApp.API.Dtos
         public string Pseudonim { get; set; }
 
         [Required]
-        public DateTime Dataurodzenia { get; set; }
+        public DateTime DataUrodzenia { get; set; }
 
         [Required]
         public string Miasto { get; set; }
